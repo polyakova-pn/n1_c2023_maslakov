@@ -14,8 +14,8 @@ int zero_fact(int a)
 
 int main()
 {
-    int a = 100;
-    
+    int a;
+    cin >> a;
     int ans = zero_fact(a);
     cout << ans << endl;
     

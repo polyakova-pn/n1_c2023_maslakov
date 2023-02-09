@@ -37,8 +37,8 @@ int is_polinom(int a)
 
 int main()
 {
-    int a = 1233521;
-    
+    int a;
+    cin >> a;
     int ans = is_polinom(a);
     if(ans == 1){
         cout << "YES" << endl;

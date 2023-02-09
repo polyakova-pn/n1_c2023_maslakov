@@ -13,7 +13,8 @@ int v_year(int a)
 
 int main()
 {
-    int a = 2000;
+    int a;
+    cin >> a;
     
     int ans = v_year(a);
     if(ans == 1){
