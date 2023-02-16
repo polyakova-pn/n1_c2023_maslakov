@@ -21,7 +21,7 @@ int is_polinom(int a)
     
     
     while(a > 0){
-        cout << a << w << endl;
+        
         zk = a % 10;
         zn = a / w;
         if(zn != zk){
