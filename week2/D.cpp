@@ -1,8 +1,8 @@
 #include <iostream>
 
 using namespace std;
-#ifndef n
-#define n 5
+#ifndef N
+#define N 5
 #endif
 void print(int a[n]){
     for(int i = 0; i < n; i++){
@@ -42,6 +42,7 @@ void moveNegativeToEnd(int (&a)[n]){
 }
 
 int main() {
+    int n = N;
     int el;
     int a[n];
     for(int i = 0; i < n; i++){

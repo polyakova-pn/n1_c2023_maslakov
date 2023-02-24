@@ -1,8 +1,8 @@
 #include <iostream>
 
 using namespace std;
-#ifndef n
-#define n 3
+#ifndef N
+#define N 3
 #endif
 
 void reverseArray(int (&a)[n]){
@@ -17,6 +17,7 @@ void reverseArray(int (&a)[n]){
 }
 
 int main() {
+    int n = N;
     int el;
     int a[n];
     for(int i = 0; i < n; i++){

@@ -1,11 +1,11 @@
 #include <iostream>
 
 using namespace std;
-#ifndef n
-#define n 2
+#ifndef N
+#define N 2
 #endif
-#ifndef m
-#define m 3
+#ifndef M
+#define M 3
 #endif
 
 
@@ -49,6 +49,8 @@ void print_transposed(int (&a)[n][m]){
 }
 
 int main() {
+    int n = N;
+    int m = M;
     int a[n][m];
     inputt(a);
     print_transposed(a);

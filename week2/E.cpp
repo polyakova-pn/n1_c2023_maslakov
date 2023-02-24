@@ -1,8 +1,8 @@
 #include <iostream>
 
 using namespace std;
-#ifndef n
-#define n 2
+#ifndef N
+#define N 2
 #endif
 
 
@@ -37,6 +37,7 @@ int findLastZero(int (&a)[n]){
 }
 
 int main() {
+    int n = N;
     int a[n];
     inputt(a);
     cout << findLastZero(a);

@@ -1,9 +1,9 @@
 #include <iostream>
 
 using namespace std;
-#ifndef n, m
-#define n 4
-#define m 3
+#ifndef N, M
+#define N 4
+#define M 3
 #endif
 
 
@@ -43,6 +43,8 @@ void print_transposed(int (&a)[n]){
 }
 
 int main() {
+    int n = N;
+    int m = M;
     int a[n][m];
     inputt(a);
     cout << findLastZero(a);

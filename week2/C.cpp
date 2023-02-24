@@ -1,8 +1,8 @@
 #include <iostream>
 
 using namespace std;
-#ifndef n
-#define n 5
+#ifndef N
+#define N 5
 #endif
 
 void shiftRight(int (&a)[n], int k){
@@ -23,6 +23,7 @@ void shiftRight(int (&a)[n], int k){
 }
 
 int main() {
+    int n = N;
     int el;
     int k;
     cin >> k;
@@ -32,8 +33,8 @@ int main() {
         a[i] = el;
     }
     shiftRight(a, k);
-    for(int i = 0; i < n; i++){
-        cout << a[i] << " ";
+    for(int j = 0; j < n; j++){
+        cout << a[j] << " ";
     }
     
 }
