@@ -5,27 +5,29 @@ using namespace std;
 #define N 3
 #endif
 
-void reverseArray(int (&a)[n]){
+void reverseArray(int (&a)[N]){
     int b;
     int e;
-    for(int i = 0; i < n / 2; i++){
+    for(int i = 0; i < N / 2; i++){
         b = a[i];
-        e = a[n - i - 1];
+        e = a[N - i - 1];
         a[i] = e;
-        a[n - i - 1] = b;
+        a[N - i - 1] = b;
     }
 }
 
 int main() {
-    int n = N;
+    int n;
+    n = N;
+    
     int el;
-    int a[n];
-    for(int i = 0; i < n; i++){
+    int a[N];
+    for(int i = 0; i < N; i++){
         cin >> el;
         a[i] = el;
     }
     reverseArray(a);
-    for(int i = 0; i < n; i++){
+    for(int i = 0; i < N; i++){
         cout << a[i] << " ";
     }
     

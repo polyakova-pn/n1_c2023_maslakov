@@ -5,10 +5,10 @@ using namespace std;
 #define N 5
 #endif
 
-void shiftRight(int (&a)[n]){
-    int el = a[n - 1];
-    for(int i = 0; i < n - 1; i++){
-        a[n - 1 - i] = a[n - 2 - i];
+void shiftRight(int (&a)[N]){
+    int el = a[N - 1];
+    for(int i = 0; i < N - 1; i++){
+        a[N - 1 - i] = a[N - 2 - i];
     }
     a[0] = el;
 }
@@ -16,13 +16,13 @@ void shiftRight(int (&a)[n]){
 int main() {
     int n = N;
     int el;
-    int a[n];
-    for(int i = 0; i < n; i++){
+    int a[N];
+    for(int i = 0; i < N; i++){
         cin >> el;
         a[i] = el;
     }
     shiftRight(a);
-    for(int i = 0; i < n; i++){
+    for(int i = 0; i < N; i++){
         cout << a[i] << " ";
     }
     

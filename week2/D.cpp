@@ -4,25 +4,25 @@ using namespace std;
 #ifndef N
 #define N 5
 #endif
-void print(int a[n]){
-    for(int i = 0; i < n; i++){
+void print(int a[N]){
+    for(int i = 0; i < N; i++){
         cout << a[i] << " ";
     }
 }
-void moveNegativeToEnd(int (&a)[n]){
+void moveNegativeToEnd(int (&a)[N]){
     int k = 0;
     
-    for(int i = 0; i < n; i++){
+    for(int i = 0; i < N; i++){
         if(a[i] > 0){
             ++k;
         }
     }
     
     int beg[k];
-    int end[n - k];
+    int end[N - k];
     int ip = 0;
         int in = 0;
-    for(int i = 0; i < n; i++){
+    for(int i = 0; i < N; i++){
         
         if(a[i] > 0){
         beg[ip] = a[i];
@@ -36,7 +36,7 @@ void moveNegativeToEnd(int (&a)[n]){
     for(int i = 0; i < k; i++){
         a[i] = beg[i];
     }
-    for(int i = 0; i < n - k; i++){
+    for(int i = 0; i < N - k; i++){
         a[k + i] = end[i];
     }
 }
@@ -44,8 +44,8 @@ void moveNegativeToEnd(int (&a)[n]){
 int main() {
     int n = N;
     int el;
-    int a[n];
-    for(int i = 0; i < n; i++){
+    int a[N];
+    for(int i = 0; i < N; i++){
         cin >> el;
         a[i] = el;
     }

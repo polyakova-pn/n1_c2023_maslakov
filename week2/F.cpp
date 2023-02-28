@@ -1,41 +1,37 @@
 #include <iostream>
 
 using namespace std;
-#ifndef N, M
-#define N 4
-#define M 3
+#ifndef N
+#define N 5
 #endif
 
 
-void inputt(int (&a)[n][m]){
+void inputt(int (&a)[N]){
     int el;
-    for(int i = 0; i < n; i++){
-        for(int j = 0; j < m; j++){
-            cin >> el;
-            a[i][j] = el;
-        }
+    for(int i = 0; i < N; i++){
+        cin >> el;
+        a[i] = el;
     }
 }
 
 
-void print(int a[n]){
-    for(int i = 0; i < n; i++){
+void print(int a[N]){
+    for(int i = 0; i < N; i++){
         cout << a[i] << " ";
     }
 }
 
 
-void print_transposed(int (&a)[n]){
+int findLastZero(int (&a)[N]){
     int beg = 0;
-    int end = n - 1;
+    int end = N - 1;
     int i;
     while(end > beg){
+        
         i = (beg + end) / 2 + 1;
-        if(a[i] == 0){
-            beg = i;
-        }else{
+        if(a[i] == 1){
             end = i - 1;
-        }
+        }else{beg = i;}
     }
     return beg;
     
@@ -44,8 +40,7 @@ void print_transposed(int (&a)[n]){
 
 int main() {
     int n = N;
-    int m = M;
-    int a[n][m];
+    int a[N];
     inputt(a);
     cout << findLastZero(a);
 }
