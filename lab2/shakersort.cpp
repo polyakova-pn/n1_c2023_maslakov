@@ -15,6 +15,7 @@ void forward_step(int beg, int end){
         }
     }
     end--;
+    
 }
 
 void backward_step(int beg, int end){

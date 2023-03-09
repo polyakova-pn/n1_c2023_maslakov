@@ -63,6 +63,7 @@ void shell1p(int a[], int N){
         }
     d = d / 2;
 }
+
 return per;
 }
 

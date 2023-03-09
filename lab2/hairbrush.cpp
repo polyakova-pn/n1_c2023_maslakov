@@ -73,6 +73,7 @@ void print(int a[],int N){
     for(int i = 0; i < N; i++){
         cout << a[i] << " ";
     }
+
 }
 
 
@@ -85,9 +86,9 @@ int main(){
         rand_mass_lin(a, N);
         
     
-    //int t = tim(a, N);
-    //std::cout << t << ' ';
-    double p = perest(a, N);
-    std::cout << p << ' ';
+    int t = tim(a, N);
+    std::cout << t << ' ';
+    //double p = perest(a, N);
+    //std::cout << p << ' ';
     }
 }
