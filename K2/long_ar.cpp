@@ -528,9 +528,9 @@ int main(){
     }
     //simp_mult(a, 9, 2, c);
     print_list(c, znc);
-    //destroy_list(a);
-    //destroy_list(b);
-    //destroy_list(c);
+    destroy_list(a);
+    destroy_list(b);
+    destroy_list(c);
 
 
 }
